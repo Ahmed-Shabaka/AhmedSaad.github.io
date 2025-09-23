@@ -16,6 +16,8 @@
 	</noscript>
 </head>
 
+
+
 <body class="is-preload">
 
 	<!-- Wrapper -->
@@ -355,6 +357,12 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script>
+			document.querySelectorAll('a').forEach(link => {
+				link.setAttribute('target', '_blank');
+				link.setAttribute('rel', 'noopener noreferrer');
+			});
+		</script>
 
 </body>
 
