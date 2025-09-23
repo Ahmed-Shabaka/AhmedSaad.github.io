@@ -61,7 +61,7 @@
 		<!-- Nav -->
 		<nav id="nav">
 			<ul class="links">
-				<li class="active"><a href="index.html">Main</a></li>
+				<li class="active"><a href="index.html" class="same-page" target="_self">Main</a></li>
 				<!--	<li><a href="generic.html">Generic Page</a></li> -->
 			</ul>
 			<ul class="icons">
@@ -321,7 +321,7 @@
 			<section class="split contact">
 				<section class="alt">
 					<h3>Location</h3>
-					<p>Cairo – Egypt<br />
+					<p><a>Cairo – Egypt</a><br />
 					</p>
 				</section>
 				<section>
@@ -358,7 +358,7 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 		<script>
-			document.querySelectorAll('a').forEach(link => {
+			document.querySelectorAll('a:not(.same-page)').forEach(link => {
 				link.setAttribute('target', '_blank');
 				link.setAttribute('rel', 'noopener noreferrer');
 			});
